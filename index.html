@@ -230,22 +230,40 @@
   .cup {
     position: absolute;
     background-image: linear-gradient(
-      #342678 48%, #e5dabd 52%);
-    background-size: 3em;
+      #342678 20%, #e5dabd 23%, #e5dabd 41%, #342678 33%, #342678 63%, #e5dabd 40%, #e5dabd 79%, #342678 82%);
     border: 5px solid rgb(229, 218, 189);
     border-right: none;
-    width: 100px;
+    width: 90px;
     height: 63px;
     right: 99px;
     bottom: 338px;
     z-index: 3;
   }
+  
+  .cup::before {
+    content: "";
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 97% 8%, 91% 14%, 9% 14%, 2% 9%);
+    background-image: linear-gradient(
+      to bottom right, #555950 16%, #66612f 36%, #d4cc88 49%);
+    top: 70px;
+    right: 0.5px
+  }
 
   .triangle {
     position: absolute;
     background-color: red;
-    width: 30px;
-    height: 50px;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    width: 47px;
+    height: 63px;
+    font-size: 30;
+    color: rgb(255, 219, 197);
+  }
+  
+  .triangle::after {
+    content: "★";
+    position: absolute;
+    top: 8px;
   }
 
   .kettle {
