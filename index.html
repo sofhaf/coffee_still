@@ -19,23 +19,88 @@
     right: 66px;
     bottom: 99px;
     width: 177px;
-    height: 211px;
-    background-color: yellow;
-  }
-
-  .redR {
-    background-color: red;
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    bottom: 0px;
-    /*     z-index: 0; */
+    height: 222px;
+    background-image: linear-gradient(
+      to left,
+      #d5b43d 17%, #b08e30 73%, #828426 96%)
   }
   
-  .comicR {
+  .canR::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-image: radial-gradient(
+      ellipse at 50% 46%,
+      #cfae3b 25%, #815e1f 53%, #d9cf94 61%, #b59732 66%);
+    z-index: 2;
+    width: 100%;
+    height: 26px;
+    top: -15px;
+  }
+  
+  .redR {
+    background-image: linear-gradient(
+      to left,
+      #b62b2f 44%, #4b0c12 93%);
+    width: 100%;
+    height: 63px;
+    position: absolute;
+    bottom: 0px;
+  }
+  
+  .redR::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    width: 100%;
+    height: 11px;
+    bottom: -6px;
+    background-image: linear-gradient(
+      to right, 
+      #4e4045 16%, #effdfe 25%, #806057 32%, #fbe3d5 100%);
+  }
+ 
+  .line1R {
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    font-size: 40;
+    font-family: cursive;
+    font-weight: 900;
+  }
+  
+  .line1R::after {
+    content: "USTELO";
+    position: absolute;
+    top: 50px;
+    left: -1px;
+    font-size: 40;
+    font-family: cursive;
+    font-weight: 900;
+  }
+
+  .line2R {
+    position: absolute;
+    top: 140px;
+    left: 10px;
     font-size: 10;
-    color: red;
-    
+    font-family: cursive;
+    font-weight: 900;
+    letter-spacing: 1.5;
+  }
+  
+   .line3R {
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    font-size: 10;
+    font-family: cursive;
+    font-weight: 900;
+    letter-spacing: 1.5;
+    color: transparent;
+    text-shadow: 0 0 2px rgb(220, 204, 160);
+    z-index: 2;
   }
 
   .canL {
@@ -43,27 +108,56 @@
     left: 99px;
     bottom: 111px;
     width: 177px;
-    height: 211px;
-    background-color: yellow;
+    height: 222px;
+    background-image: linear-gradient(
+      to left,
+      #74671e 28%, #a5882d 100%);
     z-index: -1;
   }
 
-  .redL {
-    background-color: red;
+    .canL::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-image: radial-gradient(
+      ellipse at 50% 46%,
+      #957d28 23%, #6d5b1b 51%, #dad48a 68%, #4f4411 79%);
+    z-index: 2;
     width: 100%;
-    height: 50px;
+    height: 20px;
+    top: -10px;
+  }
+  
+  .redL {
+   background-image: linear-gradient(
+      to left,
+      #3a0706 19%, #66212c 72%);
+    width: 100%;
+    height: 63px;
     position: absolute;
     bottom: 0px;
-    /*     z-index: 0; */
   }
 
+    .redL::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    width: 100%;
+    height: 11px;
+    bottom: -6px;
+    background-image: linear-gradient(
+      to right, 
+      #716264 14%, #d0d1d8 22%, #3a2322 38%, #523b39 66%, #150403 87%);
+  }
+  
   .cup {
     position: absolute;
     background-color: blue;
     width: 100px;
     height: 50px;
     right: 50px;
-    bottom: 300px;
+    bottom: 350px;
   }
 
   .triangle {
@@ -88,8 +182,9 @@
 <div class="frame">
 
   <div class="canR">
-    <div class="brandR">CAFE BUSTELO</div>
-    <div class="comicR">HELLO</div>
+    <div class="line1R">AFE</div>
+    <div class="line2R">Cafe Espresso Molido</div>
+    <div class="line3R">EVERYTHING IS MUCH THE SAME<br>GOING MANIFEST GOODLY<br>freshly eating connecticut<br><br>MUCH SOLD TO BE SPOILED CkgD</div>
     <div class="redR"></div>
   </div>
 
