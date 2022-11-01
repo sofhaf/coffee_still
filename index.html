@@ -1,0 +1,69 @@
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .frame {
+    height: 511px;
+    width: 511px;
+    border: 5px solid orange;
+    position: relative;
+  }
+
+  .canR {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 111px;
+    height: 200px;
+    background-color: yellow;
+  }
+
+  .redR {
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    /*     z-index: 0; */
+  }
+
+  .canL {
+    position: absolute;
+    right: 29px;
+    bottom: 50px;
+    width: 111px;
+    height: 200px;
+    background-color: yellow;
+  }
+
+  .redL {
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    /*     z-index: 0; */
+  }
+</style>
+
+
+<div class="frame">
+
+  <div class="canR">
+    <div class="brandR">CAFE BUSTELO</div>
+    <div class="redR"></div>
+  </div>
+
+  <div class="canL">
+    <div class="brandL">CAFE BUSTELO</div>
+    <div class="redL"></div>
+  </div>
+
+  <div class="cup"></div>
+
+</div>
