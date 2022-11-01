@@ -16,10 +16,10 @@
 
   .canR {
     position: absolute;
-    right: 50px;
-    bottom: 50px;
-    width: 111px;
-    height: 200px;
+    right: 66px;
+    bottom: 99px;
+    width: 177px;
+    height: 211px;
     background-color: yellow;
   }
 
@@ -31,14 +31,21 @@
     bottom: 0px;
     /*     z-index: 0; */
   }
+  
+  .comicR {
+    font-size: 10;
+    color: red;
+    
+  }
 
   .canL {
     position: absolute;
-    right: 29px;
-    bottom: 50px;
-    width: 111px;
-    height: 200px;
+    left: 99px;
+    bottom: 111px;
+    width: 177px;
+    height: 211px;
     background-color: yellow;
+    z-index: -1;
   }
 
   .redL {
@@ -49,6 +56,32 @@
     bottom: 0px;
     /*     z-index: 0; */
   }
+
+  .cup {
+    position: absolute;
+    background-color: blue;
+    width: 100px;
+    height: 50px;
+    right: 50px;
+    bottom: 300px;
+  }
+
+  .triangle {
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 50px;
+  }
+
+  .kettle {
+    position: absolute;
+    background-color: orange;
+    width: 130px;
+    height: 190px;
+    right: 30px;
+    bottom: 120px;
+    z-index: -2;
+  }
 </style>
 
 
@@ -56,14 +89,22 @@
 
   <div class="canR">
     <div class="brandR">CAFE BUSTELO</div>
+    <div class="comicR">HELLO</div>
     <div class="redR"></div>
   </div>
 
   <div class="canL">
     <div class="brandL">CAFE BUSTELO</div>
+    <div class="comicL"></div>
     <div class="redL"></div>
   </div>
 
-  <div class="cup"></div>
+  <div class="cup">
+    <div class="triangle"></div>
+  </div>
+
+  <div class="kettle">
+
+  </div>
 
 </div>
