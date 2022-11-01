@@ -236,7 +236,7 @@
     width: 90px;
     height: 63px;
     right: 99px;
-    bottom: 338px;
+    bottom: 334px;
     z-index: 3;
   }
   
@@ -245,14 +245,34 @@
     position: absolute;
     clip-path: polygon(0 0, 100% 0, 97% 8%, 91% 14%, 9% 14%, 2% 9%);
     background-image: linear-gradient(
-      to bottom right, #555950 16%, #66612f 36%, #d4cc88 49%);
-    top: 70px;
-    right: 0.5px
+      to bottom right, 
+      #555950 5%, #66612f 30%, #d4cc88 60%);
+    width: 92px;
+    height: 111px;
+    top: 67px;
+    right: 0.5px;
+    z-index: -2;
+  }
+  
+  .cup::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(18% 0, 0 31%, 0 66%, 19% 100%, 58% 100%, 58% 78%, 31% 78%, 20% 60%, 21% 41%, 30% 24%, 57% 24%, 57% 0);
+    background-image: linear-gradient(
+      to left, 
+      #555950 69%, #66612f 81%, #d4cc88 96%);
+    width: 50px;
+    height: 55px;
+    right: 72px;
+    top: 7px;
+    z-index: -2;
   }
 
   .triangle {
     position: absolute;
-    background-color: red;
+    background-image: linear-gradient(
+      to right, 
+      #331111 8%, #7b0e19 39%);
     clip-path: polygon(100% 50%, 0 0, 0 100%);
     width: 47px;
     height: 63px;
@@ -268,13 +288,28 @@
 
   .kettle {
     position: absolute;
-    background-color: orange;
-    width: 130px;
-    height: 190px;
-    right: 90px;
-    top: 40px;
+    background-image: linear-gradient(
+      #020301 10%, #caac99 15%, #742b15 20%, #8d241a 40%);
+    clip-path: polygon(17% 24%, 4% 31%, 17% 57%, 19% 79%, 65% 80%, 72% 24%, 58% 17%, 48% 14%, 50% 0, 38% 0, 40% 14%, 27% 18%);
+    width: 280px;
+    height: 230px;
+    right: -11px;
+    top: 45px;
     z-index: -2;
   }
+  
+  .handle {
+    position: absolute;
+    background-image: linear-gradient(
+      to left, #989285 5%, #201f18 11%, #0a0903 45%, #631c10 54%, #8f261b 85%);
+    clip-path: polygon(69% 98%, 93% 94%, 97% 60%, 90% 32%, 77% 8%, 55% 2%, 51% 0%, 29% 0, 16% 7%, 15% 100%, 28% 100%, 34% 25%, 46% 24%, 47% 16%, 71% 26%, 73% 52%, 79% 62%, 75% 75%, 77% 86%);
+    width: 150px;
+    height: 140px;
+    right: -40px;
+    top: 95px;
+    z-index: -1;
+  }
+  
 </style>
 
 
@@ -297,8 +332,7 @@
     <div class="triangle"></div>
   </div>
 
-  <div class="kettle">
-
-  </div>
+  <div class="kettle"></div>
+  <div class="handle"></div>
 
 </div>
