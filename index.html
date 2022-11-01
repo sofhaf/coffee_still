@@ -5,15 +5,29 @@
     align-items: center;
     margin: 0;
     height: 100vh;
+    background-color: rgba(192, 150, 128, 0.59);
   }
 
   .frame {
     height: 511px;
     width: 511px;
-    border: 5px solid orange;
+    border: 5px solid none;
     position: relative;
   }
 
+  .frame::before{
+    content: "";
+    clip-path: polygon(54% 2%, 89% 12%, 99% 67%, 75% 100%, 25% 100%, 0 80%, 33% 54%);
+    position: absolute;
+    z-index: -5;
+    width: 555px;
+    height: 555px;
+    top: -33px;
+    left: -33px;
+    background-image: linear-gradient(
+      to top right, #d3cdc6 0%, #a68a84 36%, #545240 58%);
+  }
+  
   .canR {
     position: absolute;
     right: 66px;
